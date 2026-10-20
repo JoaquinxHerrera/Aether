@@ -1,75 +1,79 @@
-# React + TypeScript + Vite
+# AETHER — Beyond Limits
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AETHER is a concept landing page exploring the intersection of automotive design, advanced technology, and immersive web experiences.
 
-Currently, two official plugins are available:
+Built as a frontend portfolio project, it combines a bold visual identity, motion-driven interactions, and a real-time 3D scene to create a premium digital experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+The experience is designed around a clean, futuristic aesthetic, with carefully orchestrated animations, interactive elements, and a strong emphasis on visual storytelling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Interactive 3D scene** — Real-time planetary visualization built with Three.js.
+- **Scroll-driven animations** — Animated transitions and pinned horizontal sections powered by GSAP and ScrollTrigger.
+- **Custom cursor interactions** — Context-aware cursor effects and interactive hover states.
+- **Responsive layout** — Adaptive layouts and navigation for different screen sizes.
+- **Micro-interactions** — Animated buttons, interactive cards, and subtle motion effects.
+- **Modern visual design** — A dark interface, high-contrast typography, and a technology-inspired aesthetic.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Tailwind CSS
+- GSAP
+- Three.js
+- Lucide React
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
 
-```
+- Node.js
+- npm
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
 
-```
+2. Navigate to the project directory:
+
+   ```bash
+   cd YOUR_PROJECT_FOLDER
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## What I Focused On
+
+- Creating a cohesive visual identity through typography, spacing, and motion.
+- Coordinating scroll-based animations with interactive UI elements.
+- Integrating a real-time 3D scene into a React application.
+- Building reusable, responsive frontend components.
+- Balancing visual complexity with usability and performance.
+
+## Project Status
+
+Completed as a frontend concept and portfolio project.
+
+## Links
+
+- **Live Demo:** https://aether-two-ruby.vercel.app/
+- **Repository:** https://github.com/JoaquinxHerrera/Aether
